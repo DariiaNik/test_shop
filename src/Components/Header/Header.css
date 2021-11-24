@@ -1,0 +1,97 @@
+.header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 50;
+}
+
+.header_container {
+    display: flex;
+    min-height: 80px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_menu {
+}
+
+.menu_list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu_item {
+    padding: 28px 0 32px  0;
+}
+
+.menu_link {
+    font-size: 16px;
+    font-weight: 400;
+    color: inherit;
+    line-height: calc(19.2 / 16 * 100%);
+    text-transform: uppercase;
+}
+
+.menu_link:hover {
+    color: #5ECE7B;
+}
+
+.menu_item:not(:last-child) {
+    margin: 0 16px 0 0;
+}
+
+
+.header_logo {
+    height: 41px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.header_actions {
+    height: 29px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.header_actions div:not(:last-child) {
+    margin: 0 22px 0 0;
+}
+
+.actions_currency {
+
+}
+.currency_select{
+    font-size: 18px;
+    font-weight: 500;
+    color: inherit;
+    line-height: calc(28.8 / 18 * 100%);
+    text-transform: uppercase;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+
+
+
+}
+
+.actions_cart {
+
+}
+
+.header_active{
+    border-bottom: solid 2px #5ECE7B ;
+}
+
+.header_active a {
+    color: #5ECE7B;
+    font-weight: 600;
+}
+
+
+
