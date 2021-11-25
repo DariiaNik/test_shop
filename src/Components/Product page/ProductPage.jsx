@@ -9,17 +9,17 @@ const ProductPage = () => {
                 <div className="product_page_picture picture">
                     <div className="picture_small ">
                         <div className="small_image">
-                            <img src={img} alt='clothes image'/>
+                            <img src={img} alt='clothes'/>
                         </div>
                         <div className="small_image">
-                            <img src={img} alt='clothes image'/>
+                            <img src={img} alt='clothes'/>
                         </div>
                         <div className="small_image">
-                            <img src={img} alt='clothes image'/>
+                            <img src={img} alt='clothes'/>
                         </div>
                     </div>
                     <div className="picture_big _ibg">
-                        <img src={img} alt='clothes image'/>
+                        <img src={img} alt='clothes'/>
                     </div>
                 </div>
                 <div className="product_page_description description">

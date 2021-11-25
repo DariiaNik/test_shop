@@ -557,7 +557,8 @@ let initialState = {
                 }
             ]
         }
-    ]
+    ],
+    currency:"USD",
 }
 
 const productsReducer = (state = initialState) => {

@@ -1,0 +1,29 @@
+
+.menu_item {
+    padding: 28px 0 32px 0;
+}
+
+.menu_link {
+    font-size: 16px;
+    font-weight: 400;
+    color: inherit;
+    line-height: calc(19.2 / 16 * 100%);
+    text-transform: uppercase;
+}
+
+.menu_link:hover {
+    color: #5ECE7B;
+}
+
+.menu_item{
+    margin: 0 16px 0 0;
+}
+
+.header_active {
+    border-bottom: solid 2px #5ECE7B;
+}
+
+.header_active a {
+    color: #5ECE7B;
+    font-weight: 600;
+}

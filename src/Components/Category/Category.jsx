@@ -1,90 +1,23 @@
 import React from "react";
 import './Category.css'
-import card from './images/Image.png'
-import cartIcon from './images/Circle Icon.png'
+import ProductCard from "./Product card/ProductCard";
+import {useParams} from "react-router-dom";
+
 
 
 const Category = (props) => {
-    console.log(props)
+    let params = useParams()
+    let category = props.categories.find(c => c.name === params.name);
+    let productElement = category.products.map(product => (
+       <ProductCard key={product.id} product={product} currency={props.currency}/>));
     return (
         <section className="category">
             <div className="category_container _container">
                 <div className="category_title">
-                    <h2>Category name</h2>
+                    <h2>{category.name}</h2>
                 </div>
                 <div className="product_cards">
-                    <div className="product_card card">
-                        <div className="card_wrapper">
-                            <div className="card_picture">
-                                <img alt="product_image" src={card}/>
-                            </div>
-                            <a href={'#'}><img className="card_cartIcon" alt="cart" src={cartIcon}/></a>
-                            <div className="card_title">
-                                <a href={'#'} className="card_name">Apollo Running Short</a>
-                                <div className="card_price">$50.00</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="product_card card">
-                        <div className="card_wrapper">
-                            <div className="card_picture">
-                                <img alt="product_image" src={card}/>
-                            </div>
-                            <a href={'#'}><img className="card_cartIcon" alt="cart" src={cartIcon}/></a>
-                            <div className="card_title">
-                                <a href={'#'} className="card_name">Apollo Running Short</a>
-                                <div className="card_price">$50.00</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="product_card card out_of_stock">
-                        <div className="card_wrapper">
-                            <div className="card_picture">
-                                <img alt="product_image" src={card}/>
-                            </div>
-                            <a href={'#'}><img className="card_cartIcon" alt="cart" src={cartIcon}/></a>
-                            <div className="card_title">
-                                <a href={'#'} className="card_name">Apollo Running Short</a>
-                                <div className="card_price">$50.00</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="product_card card ">
-                        <div className="card_wrapper">
-                            <div className="card_picture">
-                                <img alt="product_image" src={card}/>
-                            </div>
-                            <a href={'#'}><img className="card_cartIcon" alt="cart" src={cartIcon}/></a>
-                            <div className="card_title">
-                                <a href={'#'} className="card_name">Apollo Running Short</a>
-                                <div className="card_price">$50.00</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="product_card card">
-                        <div className="card_wrapper">
-                            <div className="card_picture">
-                                <img alt="product_image" src={card}/>
-                            </div>
-                            <a href={'#'}><img className="card_cartIcon" alt="cart" src={cartIcon}/></a>
-                            <div className="card_title">
-                                <a href={'#'} className="card_name">Apollo Running Short</a>
-                                <div className="card_price">$50.00</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="product_card card">
-                        <div className="card_wrapper">
-                            <div className="card_picture">
-                                <img alt="product_image" src={card}/>
-                            </div>
-                            <a href={'#'}><img className="card_cartIcon" alt="cart" src={cartIcon}/></a>
-                            <div className="card_title">
-                                <a href={'#'} className="card_name">Apollo Running Short</a>
-                                <div className="card_price">$50.00</div>
-                            </div>
-                        </div>
-                    </div>
+                    {productElement}
                 </div>
             </div>
         </section>

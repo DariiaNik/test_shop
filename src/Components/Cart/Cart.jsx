@@ -6,7 +6,7 @@ import minus from './images/minus-square.svg'
 
 
 
-const Cart = () => {
+const Cart = (props) => {
     return(
         <section className="cart_page">
             <div className="cart_page_container _container">
@@ -30,7 +30,7 @@ const Cart = () => {
                                 </div>
                             </div>
                             <div className="item_details_picture">
-                                <img src={img} align="product picture"/>
+                                <img src={img} alt="product" align="product picture"/>
                             </div>
                         </div>
                     </div>
@@ -52,7 +52,7 @@ const Cart = () => {
                                 </div>
                             </div>
                             <div className="item_details_picture">
-                                <img src={img} align="product picture"/>
+                                <img src={img} alt='product' align="product picture"/>
                             </div>
                         </div>
                     </div>
