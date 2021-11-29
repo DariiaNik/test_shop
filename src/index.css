@@ -67,4 +67,10 @@ body {
   left: 0;
   object-fit: cover;
 }
+a {
+  color: #1D1F22;
+}
+a:hover{
+  text-decoration: underline;
+}
 

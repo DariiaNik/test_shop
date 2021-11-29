@@ -4,6 +4,7 @@
     position: relative;
 }
 
+
 .card_wrapper {
     margin: 16px;
 }
@@ -39,7 +40,6 @@
 .card_name {
     font-size: 18px;
     font-weight: 300;
-    color: inherit;
     line-height: calc(28.8 / 18 * 100%);
 
 }
@@ -47,7 +47,6 @@
 .card_price {
     font-size: 18px;
     font-weight: 500;
-    color: inherit;
     line-height: calc(28.8 / 18 * 100%);
 
 }

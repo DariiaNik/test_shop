@@ -22,13 +22,11 @@
 }
 
 
-
 .header_logo {
     height: 41px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    cursor: pointer;
 }
 
 .header_actions {
@@ -41,24 +39,6 @@
 
 .header_actions div:not(:last-child) {
     margin: 0 22px 0 0;
-}
-
-.actions_currency {
-
-}
-.currency_select{
-    font-size: 18px;
-    font-weight: 500;
-    color: inherit;
-    line-height: calc(28.8 / 18 * 100%);
-    text-transform: uppercase;
-    background-color: transparent;
-    cursor: pointer;
-    border: none;
-    outline: none;
-
-
-
 }
 
 

@@ -1,6 +1,7 @@
 import React from "react";
 import {connect} from "react-redux";
 import Header from "./Header";
+import {setCurrencyAC} from "../../Redux/productReducer";
 
 
 
@@ -8,7 +9,7 @@ class HeaderContainer extends React.Component {
 
     render() {
         return (
-            <Header categories={this.props.categories}/>
+            <Header categories={this.props.categories} setCurrency={this.props.setCurrencyAC}/>
         )
     }
 }
@@ -21,7 +22,9 @@ let mapStateToProps = (state) => ({
 
 let mapDispatchToProps = (dispatch) => {
     return {
-
+        setCurrencyAC: (currency) => {
+            dispatch(setCurrencyAC(currency));
+        },
     }
 }
 

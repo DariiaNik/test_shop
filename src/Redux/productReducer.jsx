@@ -1,3 +1,7 @@
+
+const SET_CURRENCY = 'SET_CURRENCY';
+
+
 let initialState = {
     categories: [
         {
@@ -561,12 +565,20 @@ let initialState = {
     currency:"USD",
 }
 
-const productsReducer = (state = initialState) => {
-    return {
-        ...state
-
+const productsReducer = (state = initialState,action) => {
+    switch (action.type) {
+        case SET_CURRENCY: {
+            return {
+                ...state, currency: action.currency
+            }
+        }
+        default:
+            return state;
     }
 }
+
+
+export const setCurrencyAC = (currency => ({type: SET_CURRENCY, currency:currency}));
 
 export default productsReducer;
 

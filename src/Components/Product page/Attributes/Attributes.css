@@ -1,0 +1,11 @@
+
+.attributes_title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: calc(18 / 18 * 100%);
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+}
+.attributes_list{
+    display: flex;
+}

@@ -1,0 +1,14 @@
+.actions_currency {
+
+}
+.currency_select{
+    font-size: 18px;
+    font-weight: 500;
+    color: inherit;
+    line-height: calc(28.8 / 18 * 100%);
+    text-transform: uppercase;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
