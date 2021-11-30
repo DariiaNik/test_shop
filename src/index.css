@@ -69,6 +69,7 @@ body {
 }
 a {
   color: #1D1F22;
+  background-color: #FFFFFF;
 }
 a:hover{
   text-decoration: underline;
